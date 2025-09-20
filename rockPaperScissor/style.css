@@ -60,11 +60,55 @@ img{
 }
 
 #msg{
-   
     background-color:#081b31 ;
     color: #fff;
     font-size: 2rem;
     display: inline;
     padding: 1rem;
     border-radius: 1rem;
+}
+
+/* Media Queries for Mobile Devices */
+@media screen and (max-width: 768px) {
+    h1 {
+        height: 4rem;
+        line-height: 4rem;
+        font-size: 1.5rem;
+    }
+
+    .choices {
+        flex-direction: column;
+        gap: 2rem;
+        margin-top: 3rem;
+    }
+
+    .choice {
+        height: 120px;
+        width: 120px;
+    }
+
+    img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .score-board {
+        font-size: 1.5rem;
+        gap: 3rem;
+        margin-top: 2rem;
+    }
+
+    #userScore,
+    #compScore {
+        font-size: 2.5rem;
+    }
+
+    .msgContainer {
+        margin-top: 3rem;
+    }
+
+    #msg {
+        font-size: 1.5rem;
+        padding: 0.8rem;
+    }
 }
